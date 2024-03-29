@@ -1,6 +1,6 @@
-/*Crie uma classe que represente uma caneta com os atributos marca, cor, tampada e escrevendo. Crie os métodos tampar, destampar e escrever. Observe que uma caneta tampada não pode escrever.
+package OOP;
 
- */
+
 class Caneta {
     String marca;
     String cor;

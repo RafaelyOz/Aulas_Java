@@ -1,7 +1,7 @@
 public class ativ {
     public static void main(String[] args) {
 
-        // Teste para verificar os métodos
+        // Teste para verificar os métodos.
         // Teste fecharConta()
         System.out.println("Teste fecharConta():");
         Conta conta1 = new Conta();

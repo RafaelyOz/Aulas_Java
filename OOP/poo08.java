@@ -1,4 +1,6 @@
-public class poo08 {
+package OOP;
+
+    public class poo08 {
     public static void main(String[] args) {
         Caneta c1 = new Caneta("Bic", "Azul", false, true);
         Caneta c2 = new Caneta("Fabel", "Vermelho", true, false);
