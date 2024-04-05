@@ -163,7 +163,6 @@ class exemplo {
 
                     break;
 
-              
                 case 6:
                     executando = false;
                     break;
