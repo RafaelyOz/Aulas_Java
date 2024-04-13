@@ -13,50 +13,50 @@ public class exemplo04 {
         santos.mostrarJogadores();
     }
 }
-    class Time{
-        private String NomeTime;
-        private Jogador[] jogadores;
-        private int NumJogadores;
 
-        public Time(String NomeTime){
-            this.NomeTime = NomeTime;
-            this.jogadores = new Jogador[11];
-            this.NumJogadores = 0;
-        }
+class Time {
+    private String NomeTime;
+    private Jogador[] jogadores;
+    private int NumJogadores;
 
-        public void adicionarJogador(Jogador jogador) {
-            if (NumJogadores < 11) {
-                jogadores[NumJogadores++] = jogador;
-            } else {
-                System.out.println("O time já possui 11 jogadores.");
-            }
-        }
-
-        public void mostrarJogadores(){
-            System.out.println("Time: " + NomeTime + ":");
-            for(int i = 0; i < NumJogadores; i++){
-                System.out.println(jogadores[i].getNomeJogador() +"("+ jogadores[i].getPosicao() + ") ");
-            }
-            System.out.println();
-        }
-        
+    public Time(String NomeTime) {
+        this.NomeTime = NomeTime;
+        this.jogadores = new Jogador[11];
+        this.NumJogadores = 0;
     }
-    class Jogador{
-        private String NomeJogador;
-        private String Posicao;
 
-        public Jogador(String NomeJogador, String Posicao ){
-            this.NomeJogador = NomeJogador;
-            this.Posicao = Posicao;
-        }
-
-        public String getNomeJogador(){
-            return NomeJogador;
-        }
-
-        public String getPosicao(){
-            return Posicao;
+    public void adicionarJogador(Jogador jogador) {
+        if (NumJogadores < 11) {
+            jogadores[NumJogadores++] = jogador;
+        } else {
+            System.out.println("O time já possui 11 jogadores.");
         }
     }
 
+    public void mostrarJogadores() {
+        System.out.println("Time: " + NomeTime + ":");
+        for (int i = 0; i < NumJogadores; i++) {
+            System.out.println(jogadores[i].getNomeJogador() + "(" + jogadores[i].getPosicao() + ") ");
+        }
+        System.out.println();
+    }
 
+}
+
+class Jogador {
+    private String NomeJogador;
+    private String Posicao;
+
+    public Jogador(String NomeJogador, String Posicao) {
+        this.NomeJogador = NomeJogador;
+        this.Posicao = Posicao;
+    }
+
+    public String getNomeJogador() {
+        return NomeJogador;
+    }
+
+    public String getPosicao() {
+        return Posicao;
+    }
+}
