@@ -38,7 +38,7 @@ public class exemplo05 {
             System.out.println("\nLivros na biblioteca:");
             for( int i = 0; i < NumLivros; i++){
                 Livro livro = livros[i];
-                System.out.println("Tutulo: " +  livro.getNomeLivro() + ", Ano " + livro.getAno() + ", Autor: " + livro.getAutor().getNomeAutor());
+                System.out.println("Titulo: " +  livro.getNomeLivro() + ", Ano " + livro.getAno() + ", Autor: " + livro.getAutor().getNomeAutor());
             }
         }
     }
